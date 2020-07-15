@@ -1,0 +1,5 @@
+lib/app/modules/tasks/tasks_module.dart
+lib/app/modules/tasks/tasks_page.dart
+test/app/modules/tasks/tasks_page_test.dart
+lib/app/modules/tasks/tasks_controller.dart
+test/app/modules/tasks/tasks_controller_test.dart

@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:todo_app/app/app_controller.dart';
 import 'package:todo_app/app/app_widget.dart';
-import 'package:todo_app/app/pages/home/home_page.dart';
-
-import 'pages/other/other_page.dart';
+import 'package:todo_app/app/modules/tasks/tasks_module.dart';
 
 class AppModule extends MainModule {
   @override
@@ -15,8 +12,7 @@ class AppModule extends MainModule {
 
   @override
   List<Router> get routers => [
-        Router('/', child: (_, args) => HomePage()),
-        Router('/other', child: (_, args) => OtherPage()),
+        Router(Modular.initialRoute, module: TasksModule()),
       ];
 
   @override
